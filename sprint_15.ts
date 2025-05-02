@@ -198,6 +198,18 @@ abstract class ARect {
 
 // Task 10
 // Повторим то, что прошли. Создайте на основе абстрактного класса ARect класс Rectangular. Добавьте конструктор, который принимает два числа и заполняет свойства a, b. Создайте на базе класса объект со сторонами 0.5 и 20 и выведите полученную площадь в консоль. После проверки - закомментируйте код создания объекта.
+class Rectangular extends ARect{
+    a:number;
+    b:number;
+
+    constructor (a:number, b: number){
+        super();
+        this.a = a;
+        this.b = b;
+    }
+}
+// const rectan = new Rectangular(55,11);
+// console.log(rectan.area());
 
 // Тут создайте абстрактный класс Rectangular
 
