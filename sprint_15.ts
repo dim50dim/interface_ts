@@ -3,6 +3,11 @@
 // Создайте интерфейс IGoods, который описывает свойства title - string, amount - number, color - string (не обязательный).
 
 // тут реализуйте IGoods
+interface IGoods {
+    title: string,
+    amount : number,
+    color? : string,
+}
 
 //  Создайте объект реализующий данный интерфейс. Проверьте работу и закомментируйте код проверки.
 
