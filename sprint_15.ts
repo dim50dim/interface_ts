@@ -23,6 +23,24 @@ const thing : IGoods = {
 // Давайте реализуем интерфейс из реального примера. Опишем интерфейс IUser, который содержит id - число, readonly, username, password, hash - строки. Свойство created - число.
 
 // тут реализуйте IUser
+interface IUser{
+    readonly  id:number,
+    username:string,
+    password:string,
+     hash : string,
+    created : number    
+}
+const person : IUser = {
+    id : 4,
+    username : 'Mike',
+    password : 'adfaf554',
+    hash : 'adfq654',
+    created : 999,
+}
+// person.id = 11111;
+// person.username = 'Don'
+// console.log(person.id);
+// console.log(person.username);
 
 // реализуйте объект на основе интерфейса IUser и выведите в консоль. Проверьте работу и закомментируйте код проверки.
 

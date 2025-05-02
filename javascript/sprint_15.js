@@ -7,6 +7,13 @@ const thing = {
     amount: 444,
     color: 'black'
 };
+const person = {
+    id: 4,
+    username: 'Mike',
+    password: 'adfaf554',
+    hash: 'adfq654',
+    created: 999,
+};
 const obj_31 = {
     message_id: 32546,
     user_id: 25654,
