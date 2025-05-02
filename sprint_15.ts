@@ -85,6 +85,11 @@ interface IClock {
 }
 
 const clock = {} as IClock; // не изменяйте данную строку.
+clock.h = 21,
+clock.m = 31,
+clock.s = 59,
+
+console.log(clock);
 
 // тут заполните объект сlock, установите 21 час, 31 минута и 59 секунд.
 
