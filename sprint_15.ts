@@ -8,6 +8,12 @@ interface IGoods {
     amount : number,
     color? : string,
 }
+const thing : IGoods = {
+    title : 'shirt',
+    amount : 444,
+    color: 'black'
+}
+// console.log(thing.amount);
 
 //  Создайте объект реализующий данный интерфейс. Проверьте работу и закомментируйте код проверки.
 
@@ -17,7 +23,6 @@ interface IGoods {
 // Давайте реализуем интерфейс из реального примера. Опишем интерфейс IUser, который содержит id - число, readonly, username, password, hash - строки. Свойство created - число.
 
 // тут реализуйте IUser
-
 
 // реализуйте объект на основе интерфейса IUser и выведите в консоль. Проверьте работу и закомментируйте код проверки.
 
