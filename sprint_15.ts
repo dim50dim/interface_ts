@@ -89,13 +89,24 @@ clock.h = 21
 clock.m = 31
 clock.s = 59
 
- console.log(clock);
+//  console.log(clock);
 
 // тут заполните объект сlock, установите 21 час, 31 минута и 59 секунд.
 
 
 // Task 05
 // Создайте интерфейс IStore, который описывает товар магазина. Опишите свойство title - string, amount - number, size - массив чисел. 
+interface IStore{
+    title: string,
+    amount: number,
+    size:number[];
+}
+const phone : IStore = {
+    title : 'Iphone',
+    amount : 555,
+    size : [11,22,33,55]
+}
+// console.log(phone.size);
 
 // Тут создайте интерфейс IStore
 
@@ -107,6 +118,16 @@ clock.s = 59
 // Давайте расширим интерфейс IStore, и создадим интерфейс IBigStore, который будет расширять IStore и добавлять свойство color - массив цветов (string).
 
 // Тут создайте интерфейс IBigStore
+interface IBigStore extends IStore{
+    color: string[];
+}
+const iphone_16 : IBigStore = {
+    color: ['black','white','green'],
+    title : 'iphone_16',
+    amount : 666,
+    size : [999,888,777,666,555],
+}
+// console.log(iphone_16);
 
 // реализуйте объект на основе интерфейса IBigStore и выведите в консоль. Проверьте работу и закомментируйте код проверки.
 
@@ -114,7 +135,7 @@ clock.s = 59
 
 // Task 07
 // Не забывайте - интерфейс это просто соглашение о структуре... И может содержать не только свойства, но и методы (без реализации). Создайте интерфейс ICart, который описывает методы addToCart и возвращает id товара (number), и метод clearCart - процедура. 
-
+  interface 
 // Тут создайте интерфейс ICart
 
 // реализуйте объект на основе интерфейса ICart, методы пропишите условно. Проверьте работу и закомментируйте код проверки.
