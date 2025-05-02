@@ -85,11 +85,11 @@ interface IClock {
 }
 
 const clock = {} as IClock; // не изменяйте данную строку.
-clock.h = 21,
-clock.m = 31,
-clock.s = 59,
+clock.h = 21
+clock.m = 31
+clock.s = 59
 
-console.log(clock);
+// console.log(clock);
 
 // тут заполните объект сlock, установите 21 час, 31 минута и 59 секунд.
 
@@ -143,12 +143,12 @@ console.log(clock);
 // Task 11
 // Надеюсь вы заметили разницу между абстрактным классом и интерфейсом. Интерфейс описывает структуру и не содержит реализации. Абстрактный же класс может содержать или не содержать реализации. Однако вернемся к интерфейсам. До текущего момента, мы на базе интерфейсов создавали сразу объекты. Давайте создадим класс Paragraph (implements) на базе интерфейса IElement.
 
-interface IElement {
-    tag: string;
-    paired : boolean,
-    text : string
-    getWidth (): number;
-  }
+// interface IElement {
+//     tag: string;
+//     paired : boolean,
+//     text : string
+//     getWidth (): number;
+//   }
 
 // Тут создайте класс Paragraph c имплементацией свойств и методов интерфейса IElement. Пусть для проверки getWidth возвращает 0.
 
@@ -172,21 +172,21 @@ interface IElement {
 // Task 15
 // Создан Абстрактный класс AExample. Напишите интерфейс IExample, который соответствует его структуре.
 
-abstract class AExample {
-    public src : string = '';
-    public format : string;
-    public alt : string = '';
-    public title : string = '';
-    public width : number = 100;
-    public widthUnits : string = '%';
-    public render () {
-        const img = document.createElement('img');
-        img.src = this.src;
-        img.alt = this.alt;
-        img.title = this.title;
-        img.style.width = this.width + this.widthUnits;
-        return img;
-    }
-}
+// abstract class AExample {
+//     public src : string = '';
+//     public format : string;
+//     public alt : string = '';
+//     public title : string = '';
+//     public width : number = 100;
+//     public widthUnits : string = '%';
+//     public render () {
+//         const img = document.createElement('img');
+//         img.src = this.src;
+//         img.alt = this.alt;
+//         img.title = this.title;
+//         img.style.width = this.width + this.widthUnits;
+//         return img;
+//     }
+// }
 
 // Тут напишите IExample
