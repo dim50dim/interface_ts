@@ -32,7 +32,7 @@ const clock = {}; // не изменяйте данную строку.
 clock.h = 21;
 clock.m = 31;
 clock.s = 59;
-// console.log(clock);
+console.log(clock);
 // тут заполните объект сlock, установите 21 час, 31 минута и 59 секунд.
 // Task 05
 // Создайте интерфейс IStore, который описывает товар магазина. Опишите свойство title - string, amount - number, size - массив чисел. 
