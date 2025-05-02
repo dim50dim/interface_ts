@@ -135,7 +135,23 @@ const iphone_16 : IBigStore = {
 
 // Task 07
 // Не забывайте - интерфейс это просто соглашение о структуре... И может содержать не только свойства, но и методы (без реализации). Создайте интерфейс ICart, который описывает методы addToCart и возвращает id товара (number), и метод clearCart - процедура. 
-  interface 
+  interface ICart {
+    addToCart (id : number) : number,
+    clearCart() : void 
+  }
+  
+  const card : ICart = {
+    addToCart(id: number) : number {
+        return id;
+    },
+    clearCart() : void {
+        console.log('clearCart => is a void method');
+        
+    }
+  }
+  
+  
+  
 // Тут создайте интерфейс ICart
 
 // реализуйте объект на основе интерфейса ICart, методы пропишите условно. Проверьте работу и закомментируйте код проверки.
