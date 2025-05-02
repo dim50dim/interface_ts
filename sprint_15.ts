@@ -50,7 +50,11 @@ const person : IUser = {
 // Созданы два объекта obj_31, obj_32 - напишите интерфейс ІTelegram который они реализуют. Обычно свойства с id реализуются через readonly.
 
 interface ITelegram {
-
+    readonly message_id: number,
+    readonly user_id : number,
+    username : string,
+    time : string,
+    body : string
 }
 
 const obj_31 : ITelegram = {
@@ -68,6 +72,8 @@ const obj_32 : ITelegram = {
     time: '2024-01-29 08:25:15',
     body : 'Небольшой анонс на сегодня...'
 }
+// console.log(obj_31.message_id);
+// console.log(obj_32.time);
 
 // Task 04
 // Создан интерфейс и объект на его основе.
