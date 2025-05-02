@@ -51,6 +51,8 @@ const card = {
         console.log('clearCart => is a void method');
     }
 };
+//   console.log(card.addToCart(222));
+//   console.log(card.clearCart());
 // Тут создайте интерфейс ICart
 // реализуйте объект на основе интерфейса ICart, методы пропишите условно. Проверьте работу и закомментируйте код проверки.
 // Task 08

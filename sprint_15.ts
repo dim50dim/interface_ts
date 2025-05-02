@@ -139,7 +139,7 @@ const iphone_16 : IBigStore = {
     addToCart (id : number) : number,
     clearCart() : void 
   }
-  
+
   const card : ICart = {
     addToCart(id: number) : number {
         return id;
@@ -150,6 +150,8 @@ const iphone_16 : IBigStore = {
     }
   }
   
+//   console.log(card.addToCart(222));
+//   console.log(card.clearCart());
   
   
 // Тут создайте интерфейс ICart
