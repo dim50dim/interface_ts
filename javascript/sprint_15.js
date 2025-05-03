@@ -91,24 +91,15 @@ class Paragraph {
 }
 // Task 14
 // Создайте класс Rect, который имплементирует интерфейсы IFigureA, IFigureB и реализует методы getSquare, getPerimeter. 
-// Для проверки, на базе класса создайте объект obj_14, со сторонами 5 и 4 и выведите его площадь и периметр. 
-// Task 15
-// Создан Абстрактный класс AExample. Напишите интерфейс IExample, который соответствует его структуре.
-// abstract class AExample {
-//     public src : string = '';
-//     public format : string;
-//     public alt : string = '';
-//     public title : string = '';
-//     public width : number = 100;
-//     public widthUnits : string = '%';
-//     public render () {
-//         const img = document.createElement('img');
-//         img.src = this.src;
-//         img.alt = this.alt;
-//         img.title = this.title;
-//         img.style.width = this.width + this.widthUnits;
-//         return img;
-//     }
-// }
+class Rect {
+    a;
+    b;
+    getPerimeter() {
+        return this.a * this.b;
+    }
+    getSquare() {
+        return this.a * this.b;
+    }
+}
 // Тут напишите IExample
 //# sourceMappingURL=sprint_15.js.map

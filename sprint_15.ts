@@ -255,8 +255,18 @@ interface IFigureB{
 
 // Task 14
 // Создайте класс Rect, который имплементирует интерфейсы IFigureA, IFigureB и реализует методы getSquare, getPerimeter. 
+class Rect implements IFigureA, IFigureB{
+    public a : number;
+    public b : number;
 
+    public getPerimeter(): number {
+        return this.a * this.b;
+    }
 
+    public getSquare(): number {
+        return this.a * this.b;
+    }
+}
 
 // Для проверки, на базе класса создайте объект obj_14, со сторонами 5 и 4 и выведите его площадь и периметр. 
 
@@ -280,5 +290,13 @@ interface IFigureB{
 //         return img;
 //     }
 // }
-
+  interface IExample {
+    src : string,
+    format : string,
+    alt:string,
+    title : string,
+    width : number,
+    widthUnits: string,
+    render() : HTMLElement,
+  }
 // Тут напишите IExample
