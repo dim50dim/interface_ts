@@ -241,7 +241,10 @@ class Paragraph implements IElement{
 
 // Task 12
 // Класс может реализовывать два интерфейса. Напишите интерфейс IFigureA, интерфейс описывает фигуру квадрат - сторона a (число), и метод getSquare, который возвращает число. 
-
+interface IFigureA{
+    a:number;
+    getSquare() : number;
+}
 
 // Task 13
 // Напишите интерфейс IFigureB, интерфейс описывает фигуру квадрат - сторона b (число), и метод getPerimeter, который возвращает число.
