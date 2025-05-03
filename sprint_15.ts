@@ -218,10 +218,10 @@ class Rectangular extends ARect{
 // Надеюсь вы заметили разницу между абстрактным классом и интерфейсом. Интерфейс описывает структуру и не содержит реализации. Абстрактный же класс может содержать или не содержать реализации. Однако вернемся к интерфейсам. До текущего момента, мы на базе интерфейсов создавали сразу объекты. Давайте создадим класс Paragraph (implements) на базе интерфейса IElement.
 
 interface IElement {
-    tag: string;
-    paired : boolean;
-    text : string
-    getWidth (): number;
+    tag: string,
+    paired : boolean,
+    text : string,
+    getWidth (): number,
   }
 class Paragraph implements IElement{
     tag: string = '';
@@ -242,13 +242,16 @@ class Paragraph implements IElement{
 // Task 12
 // Класс может реализовывать два интерфейса. Напишите интерфейс IFigureA, интерфейс описывает фигуру квадрат - сторона a (число), и метод getSquare, который возвращает число. 
 interface IFigureA{
-    a:number;
-    getSquare() : number;
+    a:number,
+    getSquare() : number
 }
 
 // Task 13
 // Напишите интерфейс IFigureB, интерфейс описывает фигуру квадрат - сторона b (число), и метод getPerimeter, который возвращает число.
-
+interface IFigureB{
+    b: number,
+    getPerimeter():number
+}
 
 // Task 14
 // Создайте класс Rect, который имплементирует интерфейсы IFigureA, IFigureB и реализует методы getSquare, getPerimeter. 
