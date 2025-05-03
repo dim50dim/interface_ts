@@ -223,7 +223,14 @@ interface IElement {
     text : string
     getWidth (): number;
   }
-
+class Paragraph implements IElement{
+    tag: string = '';
+    paired: boolean = false;
+    text: string = '';
+    getWidth(): number {
+        return 0;
+    }
+}
 // Тут создайте класс Paragraph c имплементацией свойств и методов интерфейса IElement. Пусть для проверки getWidth возвращает 0.
 
 
