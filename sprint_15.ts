@@ -219,7 +219,7 @@ class Rectangular extends ARect{
 
 interface IElement {
     tag: string;
-    paired : boolean,
+    paired : boolean;
     text : string
     getWidth (): number;
   }
@@ -231,6 +231,9 @@ class Paragraph implements IElement{
         return 0;
     }
 }
+const p = new Paragraph();
+console.log(p.getWidth());
+
 // Тут создайте класс Paragraph c имплементацией свойств и методов интерфейса IElement. Пусть для проверки getWidth возвращает 0.
 
 
