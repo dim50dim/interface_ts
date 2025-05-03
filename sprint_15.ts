@@ -217,12 +217,12 @@ class Rectangular extends ARect{
 // Task 11
 // Надеюсь вы заметили разницу между абстрактным классом и интерфейсом. Интерфейс описывает структуру и не содержит реализации. Абстрактный же класс может содержать или не содержать реализации. Однако вернемся к интерфейсам. До текущего момента, мы на базе интерфейсов создавали сразу объекты. Давайте создадим класс Paragraph (implements) на базе интерфейса IElement.
 
-// interface IElement {
-//     tag: string;
-//     paired : boolean,
-//     text : string
-//     getWidth (): number;
-//   }
+interface IElement {
+    tag: string;
+    paired : boolean,
+    text : string
+    getWidth (): number;
+  }
 
 // Тут создайте класс Paragraph c имплементацией свойств и методов интерфейса IElement. Пусть для проверки getWidth возвращает 0.
 
