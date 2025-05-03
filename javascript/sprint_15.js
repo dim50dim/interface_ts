@@ -81,17 +81,17 @@ class Rectangular extends ARect {
         this.b = b;
     }
 }
-// const rectan = new Rectangular(55,11);
-// console.log(rectan.area());
-// Тут создайте абстрактный класс Rectangular
-// Task 11
-// Надеюсь вы заметили разницу между абстрактным классом и интерфейсом. Интерфейс описывает структуру и не содержит реализации. Абстрактный же класс может содержать или не содержать реализации. Однако вернемся к интерфейсам. До текущего момента, мы на базе интерфейсов создавали сразу объекты. Давайте создадим класс Paragraph (implements) на базе интерфейса IElement.
-// interface IElement {
-//     tag: string;
-//     paired : boolean,
-//     text : string
-//     getWidth (): number;
-//   }
+class Paragraph {
+    tag = '';
+    paired = false;
+    text = '';
+    getWidth() {
+        return 0;
+    }
+}
+// const p = new Paragraph();
+// console.log(p.getWidth());
+// console.log(p.paired);
 // Тут создайте класс Paragraph c имплементацией свойств и методов интерфейса IElement. Пусть для проверки getWidth возвращает 0.
 // Task 12
 // Класс может реализовывать два интерфейса. Напишите интерфейс IFigureA, интерфейс описывает фигуру квадрат - сторона a (число), и метод getSquare, который возвращает число. 

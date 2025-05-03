@@ -231,8 +231,10 @@ class Paragraph implements IElement{
         return 0;
     }
 }
-const p = new Paragraph();
-console.log(p.getWidth());
+// const p = new Paragraph();
+// console.log(p.getWidth());
+// console.log(p.paired);
+
 
 // Тут создайте класс Paragraph c имплементацией свойств и методов интерфейса IElement. Пусть для проверки getWidth возвращает 0.
 
